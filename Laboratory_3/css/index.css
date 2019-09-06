@@ -1,0 +1,175 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.logo > img {
+  width: 50px;
+}
+
+.social{
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+}
+.social > li{
+  width: 33%;
+  display: inline;
+  margin-top: 24px;
+  text-align: center;
+  font-size: 24px;
+
+}
+/*Mobile*/
+@media(min-width:0px) and (max-width:719px){
+  header{
+    width: 100%;
+    text-align: center;
+  }
+
+  .logo > img{
+    width: 60px;
+    display: block;
+    padding: 8px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .navbar{
+    position: relative;
+    padding: 16px;
+    width: 100%;
+    background: #333;
+
+  }
+  .hamburger{
+    position: absolute;
+    top:0;
+    right: 0;
+    padding: 6px;
+    color: white;
+  }
+
+  .menu{
+   display: none;
+  }
+  .product{
+    display: block;
+    border: 1px solid #ddd;
+    margin-left: 24px;
+    margin-right: 24px;
+    margin-top: 4px;
+    align-items: center;
+    text-align: center;
+  }
+  .product > p{
+    text-align: left;
+  }
+}
+@media(min-width:720px) and (max-width:990px) {
+
+  header {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 8px;
+    justify-content: center;
+  }
+
+  .logo > img{
+    margin-right: 60px;
+  }
+
+  .navbar{
+    position: relative;
+    padding: 16px;
+    width: 100%;
+    background: #333;
+
+  }
+  .hamburger{
+    position: absolute;
+    top:0;
+    right: 0;
+    padding: 6px;
+    color: white;
+  }
+
+  .menu{
+    display: none;
+  }
+  .product{
+    display: block;
+    border: 1px solid #ddd;
+    margin-left: 24px;
+    margin-right: 24px;
+    margin-top: 4px;
+    align-items: center;
+    text-align: center;
+  }
+  .product > p{
+    text-align: left;
+  }
+}
+@media(min-width:991px){
+  header {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 8px;
+    justify-content: center;
+  }
+
+  .logo > img{
+    margin-right: 60px;
+  }
+  .navbar{
+    position: relative;
+    padding: 16px;
+    width: 100%;
+    background: #333;
+    text-align: right;
+  }
+  .hamburger{
+    display: none;
+  }
+
+  .menu{
+    display: inline;
+    width: 100px;
+    position: relative;
+    padding: 6px;
+    color: white;
+
+  }
+  .menu > li{
+    display:inline;
+    margin: 8px;
+  }
+
+  main{
+    display: flex;
+    flex-direction: row;
+
+  }
+
+  .product{
+    width: 33%;
+    border: 1px solid #ddd;
+    margin-left: 24px;
+    margin-right: 24px;
+    margin-top: 4px;
+    align-items: center;
+    text-align: center;
+  }
+  .product > p{
+    text-align: left;
+  }
+}
